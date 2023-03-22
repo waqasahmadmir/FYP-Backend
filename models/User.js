@@ -76,7 +76,8 @@ UserSchema.methods.toJSON = function () {
 // )
 
 // })
-//before saving => hash the password
+
+//before saving hash the password
 UserSchema.pre("save", function (next) {
   const user = this;
 
